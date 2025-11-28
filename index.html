@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCB: DevOps Cloud Bootcamp Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://thecloudbootcamp.com/wp-content/uploads/2024/07/Logo_TCB.svg" width="180" alt="The Cloud Bootcamp Logo">
+        <h1>DevOps Cloud Bootcamp</h1>
+        <h2>CI/CD Pipeline with Jenkins</h2>
+    </header>
+
+    <section class="status-section">
+        <h3>Pipeline Status</h3>
+        <div id="build-status" class="card">Waiting for build...</div>
+        <button onclick="simulateBuild()">Simulate Build</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Cloud Bootcamp</p>
+    </footer>
+
+    <script>
+        function simulateBuild() {
+            document.getElementById('build-status').textContent = '✅ Build realizado com sucesso!';
+        }
+    </script>
+</body>
+</html>
